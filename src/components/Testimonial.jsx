@@ -8,7 +8,7 @@ const Testimonial = () => {
       {/* Header Section */}
       <div className="mx-auto max-w-4xl flex flex-col items-center px-4 text-center pt-12 sm:pt-16 md:pt-20 lg:pt-28">
         <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
-          Trusted by the Best Radiologists
+          Making Radiologists' Lives Simpler with Advanced Technology Solutions
         </h2>
       </div>
 

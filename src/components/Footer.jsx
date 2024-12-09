@@ -8,16 +8,16 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           {/* Logo */}
           <div className="flex justify-center md:justify-start items-center mb-4 md:mb-0">
-            <img
+            {/* <img
               src="\src\assets\images\icon.ico"
               alt="Logo"
               className="w-10 h-10"
-            />
-            <h1 className="font-semibold mt-2 text-2xl md:text-3xl">New Lantern</h1>
+            /> */}
+            <h1 className="font-semibold mt-2 text-2xl md:text-3xl">Radpretation</h1>
           </div>
           {/* Copyright Text */}
           <p className="text-neutral-500 text-sm mt-2 md:mt-0">
-            ©2024 New Lantern. All rights reserved.
+            ©2024 Radpretation. All rights reserved.
           </p>
         </div>
 

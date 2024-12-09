@@ -9,12 +9,12 @@ const UpFooter = () => {
           <div className="flex flex-col items-center max-w-4xl mx-auto text-center">
             {/* Headline */}
             <h2 className="text-neutral-100 text-3xl md:text-4xl lg:text-6xl font-semibold leading-tight">
-              Silicon Valley engineers meet <br /> superhero radiologists
+              Radpretation's engineers meet <br /> superhero radiologists
             </h2>
 
             {/* Description */}
             <p className="m-0 mt-6 max-w-[40ch] text-neutral-500 text-sm md:text-base leading-relaxed">
-              Lightning-fast implementation cycles. Best prices. Most reliable support.
+              60% Faster reporting. 95% AI Accuracy. 40% Cost Reduction .
             </p>
 
             {/* Button */}

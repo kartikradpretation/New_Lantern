@@ -12,12 +12,12 @@ const Home = () => {
     <div className="bg-black">
       {/* Header Section */}
       <div className="text-white py-8 px-4 md:px-12 lg:px-36 flex justify-start items-center">
-        <img
+        {/* <img
           src="\src\assets\images\icon.ico"
           alt=""
           className="w-8 h-8 md:w-10 md:h-10"
-        />
-        <h1 className="font-semibold text-xl md:text-2xl ml-4">New Lantern</h1>
+        /> */}
+        <h1 className="font-semibold text-xl md:text-2xl ml-4">Radpretation</h1>
       </div>
 
       {/* Text Section */}
@@ -57,7 +57,7 @@ const Home = () => {
         <div className="text-white text-2xl md:text-4xl lg:text-6xl text-center pt-6">
           <h1>
             Meet your new AI <br />
-            Resident Curie
+            CTA
           </h1>
         </div>
         <CurieAi />

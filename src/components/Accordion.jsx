@@ -8,23 +8,25 @@ const Accordion = () => {
   };
 
   const items = [
-    { title: "AI Measurements", 
-      content: "Single-click volumetric measurements to accelerate comparison analysis and eliminate mouse-clicks" },
     {
-      title: "AI Free Dictation & Impressions",
-      content: "Dictate fewer words to convey more meaning, with report findings and impressions in your style.",
+      title: "ICH Detection",
+      content: "Single-click volumetric measurements to accelerate comparison analysis and eliminate mouse-clicks"
     },
     {
-      title: "AI Segmentation Infrastructure",
-      content: "The future of how AI should look like in your PACS. Ditch the extra series and widgets.",
+      title: "Brain anatomy segmentation",
+      content: "Advanced AI algorithms break down complex brain images, offering deeper insights for better patient outcomes.",
+    },
+    {
+      title: "Customisable workflows",
+      content: "Tailor the workflow to meet specific clinical requirements, allowing for greater flexibility and control.",
     },
     {
       title: "Document AI for Auto-Filling the Report",
       content: "Never dictate exam reason, ultrasound measurements, and more ever again… even if it was scanned on paper.",
     },
     {
-      title: "Intelligent Worklist Assignment & RVU Dashboard",
-      content: "Relieve the administrative burdens of distributing cases, and achieve supercharged turnaround times on New Lantern.",
+      title: "MedSAM integration",
+      content: "Integrate seamlessly with MedSAM AI for a promptable auto-segmentation, giving it a truly AI-assisted annotation capability.",
     },
   ];
 
@@ -48,9 +50,8 @@ const Accordion = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className={`h-6 w-6 transition-transform duration-200 ${
-                openIndex === index ? "rotate-180" : ""
-              }`}
+              className={`h-6 w-6 transition-transform duration-200 ${openIndex === index ? "rotate-180" : ""
+                }`}
             >
               <path d="m6 9 6 6 6-6"></path>
             </svg>
@@ -58,9 +59,8 @@ const Accordion = () => {
 
           {/* Content */}
           <div
-            className={`overflow-hidden transition-all  ${
-              openIndex === index ? "max-h-screen" : "max-h-0"
-            }`}
+            className={`overflow-hidden transition-all  ${openIndex === index ? "max-h-screen" : "max-h-0"
+              }`}
             style={{
               transitionDuration: "300ms",
             }}

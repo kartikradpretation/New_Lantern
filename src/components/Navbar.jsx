@@ -55,7 +55,7 @@ const Navbar = () => {
                     className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-base font-medium text-white underline-offset-4 px-6 py-4 rounded-full transition-colors duration-200 hover:bg-black/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
                     to="/#features"
                   >
-                    Features
+                    Home
                   </Link>
                 </li>
                 <li>
@@ -64,7 +64,7 @@ const Navbar = () => {
                     className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-base font-medium text-white underline-offset-4 px-6 py-4 rounded-full transition-colors duration-200 hover:bg-black/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
                     to="/#features-accordion"
                   >
-                    Curie AI
+                    Products
                   </Link>
                 </li>
                 <li>
@@ -73,7 +73,7 @@ const Navbar = () => {
                     className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-base font-medium text-white underline-offset-4 px-6 py-4 rounded-full transition-colors duration-200 hover:bg-black/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
                     to="/#testimonial"
                   >
-                    Testimonials
+                    Solutions
                   </Link>
                 </li>
                 <li>
@@ -82,7 +82,7 @@ const Navbar = () => {
                     className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-base font-medium text-white underline-offset-4 px-6 py-4 rounded-full transition-colors duration-200 hover:bg-black/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
                     to="/#blog-article"
                   >
-                    Blog
+                    Contact
                   </Link>
                 </li>
 

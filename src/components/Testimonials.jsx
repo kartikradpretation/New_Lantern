@@ -3,27 +3,27 @@ import React, { useState, useRef } from "react";
 const testimonials = [
   {
     logo: "https://new-lantern-website.directus.app/assets/8b8fbd29-3c2d-4a7e-87ba-6a8523d9804d",
-    company: "Radiology Associates, LLP",
-    quote: "New Lantern eliminates radiology busywork by automating measurements and streamlining disease evolution analysis. The platform integrates technologists’ notes directly into reports and generates personalized impressions tailored to the clinical context. Backed by a highly motivated team of engineers, New Lantern enhances my efficiency and diagnostic confidence, since I have more time to focus on what matters.",
+    company: "Radiology Information System",
+    quote: "Unified Dashboard A centralized hub where radiologists, admins, and patients can view pertinent information, track case statuses, and monitor workflow, Seamless Collaboration Streamlined tools to foster collaboration among healthcare professionals for better outcomes. Patient Engagement Empower patients with real-time access to their reports and status updates.",
     avatar: "https://new-lantern-website.directus.app/assets/818ecaa9-fedd-4344-805e-27cb1dd004d4",
     name: "Dr. Karl Fan",
-    title: "Radiologist, Director of AI"
+    title: "Unified Dashboard A centralized hub where radiologists, admins, and patients can view pertinent information, track case statuses, and monitor workflow, Seamless Collaboration Streamlined tools to foster collaboration among healthcare professionals for better outcomes. Patient Engagement Empower patients with real-time access to their reports and status updates."
   },
   {
     logo: "https://new-lantern-website.directus.app/assets/03fbda3f-8139-4635-94f7-c8e31c1d5a72",
-    company: "Milwaukee Radiologists, Ltd.",
-    quote: "New Lantern came in and solved all our IT issues. We used to maintain PACS ourselves and in local data warehouse, and moving to New Lantern’s cloud has saved time and money. The team is full of experts on snapshotting and disaster recovery; and New Lantern raises the standard for a cloud-native product.",
+    company: "AI-Driven Diagnosis",
+    quote: "AI-Powered Insights Leverage machine learning to enhance diagnostic accuracy and speed.Advanced Imaging Tools Cutting-edge tools to visualize and analyze complex cases efficiently.Automated Workflow Reduce manual errors and improve efficiency with automation.",
     avatar: "https://new-lantern-website.directus.app/assets/9f89bd53-233a-4527-b865-4c79a8218c09",
     name: "Dr. Eric Blaschke",
-    title: "Radiologist, Breast Imaging Section Chief"
+    title: "AI-Powered Insights Leverage machine learning to enhance diagnostic accuracy and speed.Advanced Imaging Tools Cutting-edge tools to visualize and analyze complex cases efficiently.Automated Workflow Reduce manual errors and improve efficiency with automation."
   },
   {
     logo: "https://new-lantern-website.directus.app/assets/210bb330-523b-490f-a134-14355c69de1b",
-    company: "Advocate Aurora Health",
-    quote: "20 years ago we made the jump from film and handwritten reports to PACS and reporting software. Now radiology will leap from PACS and dictation software to New Lantern.",
+    company: "Secure Cloud Storage",
+    quote: "End-to-End Encryption Ensure sensitive data is protected at every step.Scalable Solutions Cloud storage options that grow with your needs.24/7 Accessibility Access your data anytime, anywhere, with robust cloud solutions.",
     avatar: "https://new-lantern-website.directus.app/assets/4b4e921f-0fe1-40e6-86d6-ebcf6994c894",
     name: "Dr. Orlin Hadjiev",
-    title: "Diagnostic Radiologist"
+    title: "End-to-End Encryption Ensure sensitive data is protected at every step.Scalable Solutions Cloud storage options that grow with your needs.24/7 Accessibility Access your data anytime, anywhere, with robust cloud solutions."
   }
 ];
 
@@ -35,18 +35,7 @@ const TestimonialCard = ({ logo, company, quote, avatar, name, title }) => (
       </div>
       <p className="text-neutral-100 text-lg">{company}</p>
     </div>
-    <p className="flex-1 text-sm text-neutral-400">“{quote}”</p>
-    <div className="flex gap-4 mt-6">
-      <div className="relative flex h-fit w-fit items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-black to-neutral-200 shadow-[0px_0px_5px_1px_#936AFF]">
-        <div className="relative h-[34px] w-[34px]">
-          <img alt="avatar" loading="lazy" className="absolute inset-0 z-10 rounded-full object-cover" src={avatar} />
-        </div>
-      </div>
-      <div className="flex flex-col justify-center text-left">
-        <p className="text-neutral-300 text-label-sm">{name}</p>
-        <p className="text-neutral-500 text-p-xs">{title}</p>
-      </div>
-    </div>
+    <p className="flex-1 text-sm text-neutral-400">{quote}</p>
   </article>
 );
 
@@ -91,19 +80,14 @@ const Testimonials = () => {
 
   return (
     <div
-      className="relative flex items-center cursor-grab active:cursor-grabbing overflow-x-auto md:overflow-hidden"
+      className="relative flex items-center cursor-grab active:cursor-grabbing"
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       ref={testimonialsRef}
     >
       {/* Left Arrow */}
-      <button
-        onClick={handlePrev}
-        className="hidden md:flex items-center justify-center absolute left-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-gray-800 text-white hover:bg-gray-700"
-      >
-        &lt;
-      </button>
+
 
       {/* Testimonial Cards */}
       <div className="flex -ml-4 gap-4 w-full md:w-auto">
@@ -119,12 +103,7 @@ const Testimonials = () => {
       </div>
 
       {/* Right Arrow */}
-      <button
-        onClick={handleNext}
-        className="hidden md:flex items-center justify-center absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-gray-800 text-white hover:bg-gray-700"
-      >
-        &gt;
-      </button>
+
     </div>
   );
 };

@@ -16,7 +16,7 @@ const Button = () => {
     >
       <span className="relative text-base text-white">
         Book a Demo{" "}
-        <span className="ml-1 hidden text-shade-white md:inline">Ctrl + D</span>
+
       </span>
     </Link>
   );

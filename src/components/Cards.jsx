@@ -20,28 +20,28 @@ const Cards = () => {
     {
       video: "\\src\\assets\\video\\1.mp4",
       icon: "\\src\\assets\\images\\icon1.svg",
-      title: "PACS Viewer",
+      title: "PACS",
       description:
-        "A sleek cloud-native viewer with a next-gen toolset and lightning speeds.",
+        "Comprehensive imaging storage and retrieval system.",
     },
     {
       video: "\\src\\assets\\video\\2.mp4",
       icon: "\\src\\assets\\images\\icon2.svg",
-      title: "AI Reporter",
+      title: "AI SUITE",
       description:
-        "Dictate less; read more. Automate 75% of the radiology report and take back 100+ minutes per shift.",
+        "Assist radiologists in detecting, diagnosing complex medical conditions.",
     },
     {
       video: "\\src\\assets\\video\\3.mp4",
       icon: "\\src\\assets\\images\\icon3.svg",
-      title: "Smart Worklist",
+      title: "TELERADIOLOGY PLATFORM",
       description:
-        "Automatically distribute cases based on specialties and real-time RVU tracking accessible via personal dashboard.",
+        "Ensuring timely and high-quality diagnostic services.",
     },
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-3 mx-auto px-4 sm:px-10 md:px-20 lg:px-44">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-3">
       {cards.map((card, index) => (
         <div
           key={index}
